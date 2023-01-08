@@ -1,1 +1,481 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans::wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 55%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+}
+nav img {
+  width: min(10rem, 90%);
+}
+nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-links a {
+  font-size: 1.4rem;
+  color: hsl(243deg, 87%, 12%);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-bottom: 4rem;
+}
+.hero-section img {
+  width: min(70rem, 90%);
+  margin-bottom: 2rem;
+}
+.hero-section .hero-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .hero-area h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1.1;
+  line-height: 1.4;
+  text-align: center;
+  width: min(60rem, 90%);
+  margin-bottom: 2rem;
+}
+.hero-section .hero-area p {
+  color: hsl(243deg, 87%, 12%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 1.5;
+  line-height: 1.6;
+  width: min(60rem, 90%);
+  margin-bottom: 2rem;
+}
+.hero-section .hero-area .button-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: min(60rem, 90%);
+}
+.hero-section .hero-area .button-area input {
+  border: 0.2rem solid hsl(238deg, 22%, 44%);
+  width: min(40rem, 90%);
+  padding: 1.2em 2em;
+  border-radius: 0.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 75%);
+}
+.hero-section .hero-area .button-area a {
+  background-color: hsl(224deg, 93%, 58%);
+  width: min(40rem, 90%);
+  padding: 1.1em 2em;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem hsl(0deg, 0%, 75%);
+  margin-bottom: 2rem;
+  text-align: center;
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.hero-section .hero-area .button-area a:hover {
+  opacity: 0.7;
+}
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem;
+  background: url(../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.features-section img {
+  width: min(70rem, 90%);
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+.features-section .features-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.features-section .features-area h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.1;
+  line-height: 1.4;
+  text-align: center;
+  width: min(60rem, 90%);
+}
+.features-section .features-area p {
+  color: hsl(238deg, 22%, 44%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5;
+  line-height: 1.6;
+  width: min(60rem, 90%);
+}
+.features-section .features-area button {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-bottom: 0.2rem solid hsl(170deg, 45%, 43%);
+  width: min(17rem, 90%);
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.features-section .features-area button a {
+  color: hsl(170deg, 45%, 43%);
+  font-size: 1.4rem;
+}
+.features-section .features-area button img {
+  margin: 0;
+  width: min(2.2rem, 90%);
+}
+.features-section .features-area button:hover {
+  opacity: 0.7;
+}
+.features-section .features-area .testemonial-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: min(60rem, 90%);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  margin-bottom: 7rem;
+  background-color: white;
+  box-shadow: 0 0 1rem 0.1rem rgba(128, 128, 128, 0.192);
+}
+.features-section .features-area .testemonial-area img {
+  width: min(1.8rem, 90%);
+  margin: 0;
+}
+.features-section .features-area .testemonial-area p {
+  color: hsl(243deg, 87%, 12%);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5;
+  line-height: 1.6;
+  width: min(50rem, 100%);
+}
+.features-section .features-area .testemonial-area .ceo-details {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  justify-self: flex-start;
+}
+.features-section .features-area .testemonial-area .ceo-details img {
+  width: min(4rem, 90%);
+  margin: 0;
+  border-radius: 50%;
+}
+.features-section .features-area .testemonial-area .ceo-details .ceo-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.features-section .features-area .testemonial-area .ceo-details .ceo-title h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+.features-section .features-area .testemonial-area .ceo-details .ceo-title p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.get-access-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: hsl(238deg, 22%, 44%);
+}
+.get-access-section .access-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.get-access-section .access-desc h2 {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(240deg, 75%, 98%);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.1;
+  line-height: 1.4;
+  text-align: center;
+  width: min(60rem, 90%);
+}
+.get-access-section .access-desc p {
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.5;
+  line-height: 1.6;
+  text-align: center;
+  width: min(50rem, 90%);
+  margin-bottom: 3rem;
+}
+.get-access-section .button-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: min(60rem, 90%);
+}
+.get-access-section .button-area input {
+  width: min(40rem, 90%);
+  padding: 1.2em 2em;
+  border-radius: 0.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 75%);
+}
+.get-access-section .button-area a {
+  background-color: hsl(224deg, 93%, 58%);
+  width: min(40rem, 90%);
+  padding: 1.1em 2em;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(20, 20, 20, 0.192);
+  margin-bottom: 2rem;
+  text-align: center;
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.get-access-section .button-area a:hover {
+  opacity: 0.7;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 8rem;
+  background-color: hsl(243deg, 87%, 12%);
+}
+.contact-section .contact-main svg {
+  margin-bottom: 6rem;
+}
+.contact-section .contact-main .contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contact-section .contact-main .contact-details .phone {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact-section .contact-main .contact-details .phone p {
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+.contact-section .contact-main .contact-details .email {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact-section .contact-main .contact-details .email p {
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+.contact-section .link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contact-section .link-list p {
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+.contact-section .social-media-icon-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contact-section .social-media-icon-list i {
+  color: hsl(240deg, 75%, 98%);
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 4rem 8rem;
+  }
+  nav .nav-links {
+    gap: 3rem;
+  }
+  .hero-section {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+  }
+  .hero-section .hero-area {
+    width: min(60rem, 90%);
+    align-items: flex-start;
+  }
+  .hero-section .hero-area h1 {
+    text-align: left;
+    font-size: 3.6rem;
+  }
+  .hero-section .hero-area p {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .hero-section .hero-area .button-area {
+    align-items: flex-start;
+  }
+  .features-section {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10rem 8rem;
+  }
+  .features-section .features-area {
+    align-items: flex-start;
+  }
+  .features-section .features-area h2 {
+    text-align: left;
+    font-size: 2.8rem;
+  }
+  .get-access-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 8rem;
+  }
+  .get-access-section .button-area {
+    align-items: flex-start;
+  }
+  .get-access-section .button-area input {
+    width: min(40rem, 90%);
+  }
+  .get-access-section .button-area a {
+    margin: 0;
+    width: min(20rem, 90%);
+  }
+  .get-access-section .access-desc {
+    align-items: flex-start;
+    width: 80rem;
+  }
+  .get-access-section .access-desc h2 {
+    text-align: left;
+  }
+  .get-access-section .access-desc p {
+    text-align: left;
+    width: 90%;
+  }
+  .contact-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-section .link-list {
+    margin-top: 3rem;
+  }
+  .contact-section .social-media-icon-list {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 62.5%;
+  }
+  .hero-section .hero-area {
+    width: 90rem;
+  }
+  .hero-section .hero-area h1 {
+    width: 90%;
+  }
+  .hero-section .hero-area p {
+    width: 90%;
+  }
+  .hero-section .hero-area .button-area {
+    flex-direction: row;
+  }
+  .hero-section .hero-area .button-area input {
+    width: min(40rem, 90%);
+  }
+  .hero-section .hero-area .button-area a {
+    margin: 0;
+    width: min(20rem, 90%);
+  }
+  .features-section .features-area {
+    width: 90rem;
+  }
+  .features-section .features-area p {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
